@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Markdown on Arp-Madore 417-391</title><link>https://www.loph.tk/tags/markdown/</link><description>Recent content in Markdown on Arp-Madore 417-391</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Dec 2022 15:33:37 +0800</lastBuildDate><atom:link href="https://www.loph.tk/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown Overview</title><link>https://www.loph.tk/p/markdown-overview/</link><pubDate>Sat, 10 Dec 2022 15:33:37 +0800</pubDate><guid>https://www.loph.tk/p/markdown-overview/</guid><description>&lt;h2 id="headings">Headings&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># Heading level 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## Heading level 2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">### Heading level 3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#### Heading level 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">##### Heading level 5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">###### Heading level 6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="emphasis">Emphasis&lt;/h2>
+&lt;h3 id="bold">Bold&lt;/h3>
+&lt;p>&lt;code>I just love **bold text**.&lt;/code>&lt;br>
+I just love &lt;strong>bold text&lt;/strong>.&lt;/p>
+&lt;p>&lt;code>I just love __bold text__.&lt;/code>&lt;br>
+I just love &lt;strong>bold text&lt;/strong>.&lt;/p>
+&lt;h3 id="italic">Italic&lt;/h3>
+&lt;p>&lt;code>Italicized text is the *cat's meow*.&lt;/code>&lt;br>
+Italicized text is the &lt;em>cat&amp;rsquo;s meow&lt;/em>.&lt;/p>
+&lt;p>&lt;code>Italicized text is the _cat's meow_.&lt;/code>&lt;br>
+Italicized text is the &lt;em>cat&amp;rsquo;s meow&lt;/em>.&lt;/p>
+&lt;h3 id="bold-and-italic">Bold and Italic&lt;/h3>
+&lt;p>Add three asterisks before and after a word or phrase
+to emphasize text with &lt;strong>bold&lt;/strong> and &lt;em>italics&lt;/em> at the same time.&lt;br>
+&lt;code>This text is ***really important***.&lt;/code>&lt;br>
+This text is &lt;em>&lt;strong>really important&lt;/strong>&lt;/em>.&lt;/p>
+&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
+&lt;h3 id="blockquotes-with-single-paragraph">Blockquotes with Single Paragraph&lt;/h3>
+&lt;p>&lt;code>&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.&lt;/code>\&lt;/p>
+&lt;blockquote>
+&lt;p>Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="blockquotes-with-multiple-paragraphs">Blockquotes with Multiple Paragraphs&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p>
+&lt;p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="blockquotes-with-other-elements">Blockquotes with Other Elements&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt; #### The quarterly results look great!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; - Revenue was off the chart.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; - Profits were higher than ever.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; *Everything* is going according to **plan**.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;ul>
+&lt;li>Revenue was off the chart.&lt;/li>
+&lt;li>Profits were higher than ever.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Everything&lt;/em> is going according to &lt;strong>plan&lt;/strong>.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="lists">Lists&lt;/h2>
+&lt;h3 id="ordered-lists">Ordered Lists&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">1. First item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. Second item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. Third item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4. Fourth item
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;li>Fourth item&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">4. First item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. Second item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. Third item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4. Fourth item
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;li>Fourth item&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">1. First item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. Second item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. Third item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1. Indented item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2. Indented item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">4. Fourth item
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item
+&lt;ol>
+&lt;li>Indented item&lt;/li>
+&lt;li>Indented item&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Fourth item&lt;/li>
+&lt;/ol>
+&lt;h3 id="unordered-lists">Unordered Lists&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- First item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Second item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Third item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Fourth item
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;li>Fourth item&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- First item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Second item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Third item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1. Indented item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2. Indented item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Fourth item
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item
+&lt;ol>
+&lt;li>Indented item&lt;/li>
+&lt;li>Indented item&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Fourth item&lt;/li>
+&lt;/ul>
+&lt;h2 id="code">Code&lt;/h2>
+&lt;p>To denote a word or phrase as code, enclose it in backticks(`).&lt;br>
+&lt;code>``At the command prompt, type `nano`.``&lt;/code>&lt;br>
+&lt;code>At the command prompt, type `nano`.&lt;/code>&lt;/p>
+&lt;h2 id="horizontal-rules">Horizontal Rules&lt;/h2>
+&lt;p>To create a horizontal rule, use three or more dashes (&amp;mdash;) on a line by themselves.&lt;/p>
+&lt;hr>
+&lt;p>Put blank lines before and after horizontal rules.&lt;/p>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;p>To create a link, enclose the link text in brackets (e.g., [Duck Duck Go]) and then follow
+it immediately with the URL in parentheses (e.g., (&lt;a class="link" href="https://duckduckgo.com" target="_blank" rel="noopener"
+>https://duckduckgo.com&lt;/a>)).&lt;/p>
+&lt;p>&lt;code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com)&lt;/code>.&lt;br>
+My favorite search engine is &lt;a class="link" href="https://duckduckgo.com" target="_blank" rel="noopener"
+>Duck Duck Go&lt;/a>.&lt;/p>
+&lt;h3 id="adding-titles">Adding Titles&lt;/h3>
+&lt;p>You can optionally add a title for a link. This will appear as a tooltip when the user
+hovers over the link. To add a title, enclose it in quotation marks after the URL.&lt;br>
+&lt;code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com &amp;quot;The best search engine for privacy&amp;quot;)&lt;/code>.&lt;br>
+My favorite search engine is &lt;a class="link" href="https://duckduckgo.com" title="The best search engine for privacy"
+target="_blank" rel="noopener"
+>Duck Duck Go&lt;/a>.&lt;/p>
+&lt;h3 id="urls-and-email-addresses">URLs and Email Addresses&lt;/h3>
+&lt;p>To quickly turn a URL or email address into a link, enclose it in angle brackets.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;https://www.markdownguide.org&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;fake@example.com&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;a class="link" href="https://www.markdownguide.org" target="_blank" rel="noopener"
+>https://www.markdownguide.org&lt;/a>&lt;br>
+&lt;a class="link" href="mailto:fake@example.com" >fake@example.com&lt;/a>&lt;/p>
+&lt;h3 id="formatting-links">Formatting Links&lt;/h3>
+&lt;p>To emphasize links, add asterisks before and after the brackets and parentheses. To
+denote links as code, add backticks in the brackets.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="n">I&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">love&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">supporting&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">EFF&lt;/span>&lt;span class="p">](&lt;/span>&lt;span class="n">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="n">eff&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">org&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">This&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">is&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">Markdown&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Guide&lt;/span>&lt;span class="p">](&lt;/span>&lt;span class="n">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="n">www&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">markdownguide&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">org&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">See&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">section&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">on&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">code&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="p">](&lt;/span>&lt;span class="c1">#code).
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>I love supporting the &lt;strong>&lt;a class="link" href="https://eff.org" target="_blank" rel="noopener"
+>EFF&lt;/a>&lt;/strong>.&lt;br>
+This is the &lt;em>&lt;a class="link" href="https://www.markdownguide.org" target="_blank" rel="noopener"
+>Markdown Guide&lt;/a>&lt;/em>.&lt;br>
+See the section on &lt;a class="link" href="#code" >&lt;code>code&lt;/code>&lt;/a>.&lt;/p>
+&lt;h3 id="reference-style-links">Reference-style Links&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">eat: it was a [hobbit-hole][1], and that means comfort.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[1]: &amp;lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&amp;gt; &amp;#34;Hobbit lifestyles&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a &lt;a class="link" href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles"
+target="_blank" rel="noopener"
+>hobbit-hole&lt;/a>, and that means comfort.&lt;/p>
+&lt;h2 id="images">Images&lt;/h2>
+&lt;p>&lt;code>![Rick &amp;amp; Morty is awesome!](1.jpg &amp;quot;The portal is awesome&amp;quot;)&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://www.loph.tk/p/markdown-overview/1.jpg"
+width="2100"
+height="2100"
+srcset="https://www.loph.tk/p/markdown-overview/1_hu2ab64aa3bf7aa55d9fe750f5dc683fce_1479283_480x0_resize_q75_box.jpg 480w, https://www.loph.tk/p/markdown-overview/1_hu2ab64aa3bf7aa55d9fe750f5dc683fce_1479283_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Rick &amp; Morty is awesome!"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;h2 id="escaping-characters">Escaping Characters&lt;/h2>
+&lt;p>&lt;code>\* Without the backslash, this would be a bullet in an unordered list.&lt;/code>&lt;br>
+* Without the backslash, this would be a bullet in an unordered list.&lt;/p>
+&lt;h2 id="some-rules">Some rules&lt;/h2>
+&lt;ul>
+&lt;li>Always put a space between the number signs and the heading name.&lt;/li>
+&lt;li>Put blank lines before and after a heading.&lt;/li>
+&lt;li>Use a blank line to separate one or more lines of text.&lt;/li>
+&lt;li>Don&amp;rsquo;t indent paragraphs with spaces or tabs.&lt;/li>
+&lt;li>To create a line break or new line (&amp;lt;br&amp;gt;), end a line with two or more spaces,
+or a backslash(\) and then type return.&lt;/li>
+&lt;li>Put blank lines before and after blockquotes.&lt;/li>
+&lt;/ul></description></item></channel></rss>
