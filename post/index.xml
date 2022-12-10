@@ -1,4 +1,235 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arp-Madore 417-391</title><link>https://www.loph.tk/post/</link><description>Recent content in Posts on Arp-Madore 417-391</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.loph.tk/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Binary Tree</title><link>https://www.loph.tk/p/binary-tree/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.loph.tk/p/binary-tree/</guid><description>&lt;img src="https://www.loph.tk/p/binary-tree/cover.jpg" alt="Featured image of post Binary Tree" />&lt;p>Binary tree.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arp-Madore 417-391</title><link>https://www.loph.tk/post/</link><description>Recent content in Posts on Arp-Madore 417-391</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 09 Dec 2022 20:55:53 +0800</lastBuildDate><atom:link href="https://www.loph.tk/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Workflow Post</title><link>https://www.loph.tk/p/workflow-post/</link><pubDate>Fri, 09 Dec 2022 20:55:53 +0800</pubDate><guid>https://www.loph.tk/p/workflow-post/</guid><description>&lt;img src="https://www.loph.tk/p/workflow-post/hugo.png" alt="Featured image of post Workflow Post" />&lt;p>Now locate at the &lt;strong>root directory&lt;/strong> of your blog site, in my case which is: ~/Repo/MyBlog&lt;/p>
+&lt;h2 id="create-new-category">Create new category&lt;/h2>
+&lt;h3 id="name-rule">Name rule&lt;/h3>
+&lt;p>Before create new post, you&amp;rsquo;d better create a new category for the post(if haven&amp;rsquo;t),
+so you can index the post easily, the category file(_index.md) is located at
+&lt;strong>content/categories/{category name}&lt;/strong>.&lt;/p>
+&lt;p>I&amp;rsquo;d like to name the category with a specific rule:&lt;/p>
+&lt;ul>
+&lt;li>For &lt;strong>title&lt;/strong> field in _index.md: Each letter with a &lt;strong>uppercase&lt;/strong>, split with &lt;strong>space&lt;/strong>.&lt;/li>
+&lt;li>For &lt;strong>{category name}&lt;/strong> of directory name: Each letter with a &lt;strong>lowercase&lt;/strong>, connect with &lt;strong>-&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>And the &lt;em>category name&lt;/em> below should keep the same term, the only difference
+should be &lt;strong>initial case&lt;/strong> and &lt;strong>delimiter between letters&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>title&lt;/strong> field in _index.md of categories should be consistent with
+&lt;strong>categories&lt;/strong> field in index.md of your post.&lt;/li>
+&lt;li>content/categories/&lt;strong>{category name}&lt;/strong> and content/post/&lt;strong>{category name}&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="command">Command&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">hugo new categories/&lt;span class="o">{&lt;/span>categories name&lt;span class="o">}&lt;/span>/&lt;span class="se">\_&lt;/span>index.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="create-new-post">Create new post&lt;/h2>
+&lt;p>Before you creare a new post, you should determine two items about your post down.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>category name&lt;/strong>: Which category your post belong to.&lt;/li>
+&lt;li>&lt;strong>title name&lt;/strong>: The title of your post.&lt;/li>
+&lt;/ul>
+&lt;p>After you determine those things above, you can run command below to create a new post.
+The post will be created at &lt;strong>content/post/{category name}/{title name}&lt;/strong> directory.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">hugo new post/&lt;span class="o">{&lt;/span>category name&lt;span class="o">}&lt;/span>/&lt;span class="o">{&lt;/span>title name&lt;span class="o">}&lt;/span>/index.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>or command below:&lt;/p>
+&lt;p>note: &lt;strong>{final title name}&lt;/strong> can override the &lt;strong>{title name}&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">hugo new post/&lt;span class="o">{&lt;/span>category name&lt;span class="o">}&lt;/span>/&lt;span class="o">{&lt;/span>title name&lt;span class="o">}&lt;/span>/&lt;span class="o">{&lt;/span>final title name&lt;span class="o">}&lt;/span>.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="write-post">Write post&lt;/h2>
+&lt;p>After you create your new post, some field in front matter you need
+to finish.&lt;/p>
+&lt;ul>
+&lt;li>description: Outline of your post.&lt;/li>
+&lt;li>slug: Last path of url when your open the past in browser.&lt;/li>
+&lt;li>image: The head image of your post, at the same position with index.md
+of you post.&lt;/li>
+&lt;li>tags: Same name rule with category.&lt;/li>
+&lt;/ul>
+&lt;p>You also need to add the source of your image at the end of the post.&lt;/p>
+&lt;h2 id="publish-post">Publish post&lt;/h2>
+&lt;h3 id="publish-on-github-pages">Publish on github pages&lt;/h3>
+&lt;p>Using github pages to publish you post is awesome, there are some thing you
+need to do.&lt;/p>
+&lt;ul>
+&lt;li>Create two repositories: One private for your blog site created by hugo, another
+public for your github pages.&lt;/li>
+&lt;li>You can create a workflow using &lt;strong>Github Action&lt;/strong> on your private blog repository,
+my gh-pages.yml is below.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">github pages&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">workflow_dispatch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build Web&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy Web&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PERSONAL_TOKEN&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.PERSONAL_TOKEN }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">EXTERNAL_REPOSITORY&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">loph3xertoi/loph3xertoi.github.io&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_BRANCH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">PUBLISH_DIR&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">commit_message&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ github.event.head_commit.message }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="commit-your-post">Commit your post&lt;/h3>
+&lt;p>You can publish your post when you finish it, you can easily publish
+your post with the help of git and github. Something you need to do:&lt;/p>
+&lt;blockquote>
+&lt;p>Using git to conduct you blog site, create two branches: &lt;strong>master&lt;/strong> and
+&lt;strong>dev&lt;/strong>, you can create some new posts in branch &lt;strong>dev&lt;/strong> and merge to
+&lt;strong>master&lt;/strong> and push your changes in master branch.&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git checkout dev &lt;span class="c1"># Change your current branch to dev.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Do some changes, add new post or modify existed post.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m&lt;span class="s1">&amp;#39;Some description.&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout master
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git merge dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push &lt;span class="c1"># Make sure you have run &amp;#39;git push --set-upstream origin master:master&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After you push your changes to github, post will be update automatically as
+Github Action.&lt;/p>
+&lt;h2 id="update-post">Update post&lt;/h2>
+&lt;p>Same as publish post above, you don&amp;rsquo;t need to update the &lt;strong>lastmod&lt;/strong> field
+in front matter, it will be updated automatically, my .vimrc setting is below:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-.vimrc" data-lang=".vimrc">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;#34; Define some autocmd for hugo, when modify post(*.md) in ~/Repo/MyBlog/content/post,&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c">&amp;#34; update(insert lastmod field if haven&amp;#39;t) lastmod automatically.&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="k">fun&lt;/span> &lt;span class="nx">LastMod&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">frontmatter_start&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;---&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">frontmatter_end&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;---&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">max_frontmatter_bord&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">max&lt;/span>&lt;span class="p">(&lt;/span>[&lt;span class="nx">l&lt;/span>:&lt;span class="nx">frontmatter_start&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">frontmatter_end&lt;/span>]&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">date_field&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;^date&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_field&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;^lastmod&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c"> &amp;#34; lastmod field found in front matter.&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_field&lt;/span> &amp;amp;&amp;amp; &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_field&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">max_frontmatter_bord&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="nx">exe&lt;/span> &lt;span class="s2">&amp;#34;1,&amp;#34;&lt;/span> . &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_field&lt;/span> . &lt;span class="s2">&amp;#34;g/lastmod: /s/lastmod: .*/lastmod: &amp;#34;&lt;/span> . &lt;span class="nx">strftime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;%FT%T%z&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">else&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">let&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_string&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;lastmod: &amp;#34;&lt;/span> . &lt;span class="nx">strftime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;%FT%T%z&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="nx">exe&lt;/span> &lt;span class="nx">l&lt;/span>:&lt;span class="nx">date_field&lt;/span> . &lt;span class="s2">&amp;#34;normal! o&amp;#34;&lt;/span> . &lt;span class="nx">l&lt;/span>:&lt;span class="nx">lastmod_string&lt;/span> . &lt;span class="s2">&amp;#34;\&amp;lt;Esc&amp;gt;&amp;#34;&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span> &lt;span class="k">endif&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nx">endfun&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nx">augroup&lt;/span> &lt;span class="nx">myhugocmd&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nx">autocmd&lt;/span> &lt;span class="nx">myhugocmd&lt;/span> &lt;span class="nx">BufWrite&lt;/span> &lt;span class="p">~&lt;/span>&lt;span class="sr">/Repo/&lt;/span>&lt;span class="nx">MyBlog&lt;/span>&lt;span class="sr">/content/&lt;/span>&lt;span class="nx">post&lt;/span>/*.&lt;span class="nx">md&lt;/span> &lt;span class="nx">ks&lt;/span>&lt;span class="p">|&lt;/span>&lt;span class="nx">call&lt;/span> &lt;span class="nx">LastMod&lt;/span>&lt;span class="p">()|&lt;/span>&amp;#39;&lt;span class="nx">s&lt;/span>&lt;span class="err">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Binary Tree</title><link>https://www.loph.tk/p/binary-tree/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.loph.tk/p/binary-tree/</guid><description>&lt;img src="https://www.loph.tk/p/binary-tree/cover.jpg" alt="Featured image of post Binary Tree" />&lt;p>Binary tree.
 aa&lt;/p>
 &lt;blockquote>
 &lt;p>Photo by &lt;a class="link" href="https://medium.com/@gauriwankhade" target="_blank" rel="noopener"
