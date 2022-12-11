@@ -306,7 +306,12 @@ data-flex-basis="240px"
 &lt;li>To create a line break or new line (&amp;lt;br&amp;gt;), end a line with two or more spaces,
 or a backslash(\) and then type return.&lt;/li>
 &lt;li>Put blank lines before and after blockquotes.&lt;/li>
-&lt;/ul></description></item><item><title>Workflow Post</title><link>https://www.loph.tk/p/workflow-post/</link><pubDate>Fri, 09 Dec 2022 20:55:53 +0800</pubDate><guid>https://www.loph.tk/p/workflow-post/</guid><description>&lt;img src="https://www.loph.tk/p/workflow-post/hugo.png" alt="Featured image of post Workflow Post" />&lt;p>Now locate at the &lt;strong>root directory&lt;/strong> of your blog site, in my case which is: ~/Repo/MyBlog&lt;/p>
+&lt;/ul>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.markdownguide.org/" target="_blank" rel="noopener"
+>Markdown Guide&lt;/a>.&lt;/li>
+&lt;/ol></description></item><item><title>Workflow Post</title><link>https://www.loph.tk/p/workflow-post/</link><pubDate>Fri, 09 Dec 2022 20:55:53 +0800</pubDate><guid>https://www.loph.tk/p/workflow-post/</guid><description>&lt;img src="https://www.loph.tk/p/workflow-post/hugo.png" alt="Featured image of post Workflow Post" />&lt;p>Now locate at the &lt;strong>root directory&lt;/strong> of your blog site, in my case which is: ~/Repo/MyBlog&lt;/p>
 &lt;h2 id="create-new-category">Create new category&lt;/h2>
 &lt;h3 id="name-rule">Name rule&lt;/h3>
 &lt;p>Before create new post, you&amp;rsquo;d better create a new category for the post(if haven&amp;rsquo;t),

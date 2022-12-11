@@ -306,4 +306,9 @@ data-flex-basis="240px"
 &lt;li>To create a line break or new line (&amp;lt;br&amp;gt;), end a line with two or more spaces,
 or a backslash(\) and then type return.&lt;/li>
 &lt;li>Put blank lines before and after blockquotes.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.markdownguide.org/" target="_blank" rel="noopener"
+>Markdown Guide&lt;/a>.&lt;/li>
+&lt;/ol></description></item></channel></rss>
