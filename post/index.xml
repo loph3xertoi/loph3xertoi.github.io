@@ -542,9 +542,77 @@ in front matter, it will be updated automatically, my .vimrc setting is below:&l
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nx">autocmd&lt;/span> &lt;span class="nx">myhugocmd&lt;/span> &lt;span class="nx">BufWrite&lt;/span> &lt;span class="p">~&lt;/span>&lt;span class="sr">/Repo/&lt;/span>&lt;span class="nx">MyBlog&lt;/span>&lt;span class="sr">/content/&lt;/span>&lt;span class="nx">post&lt;/span>/*.&lt;span class="nx">md&lt;/span> &lt;span class="nx">ks&lt;/span>&lt;span class="p">|&lt;/span>&lt;span class="nx">call&lt;/span> &lt;span class="nx">LastMod&lt;/span>&lt;span class="p">()|&lt;/span>&amp;#39;&lt;span class="nx">s&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Binary Tree</title><link>https://www.loph.tk/p/binary-tree/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.loph.tk/p/binary-tree/</guid><description>&lt;img src="https://www.loph.tk/p/binary-tree/cover.jpg" alt="Featured image of post Binary Tree" />&lt;p>Binary tree.
-aa&lt;/p>
+&lt;/div></description></item><item><title>Binary Tree</title><link>https://www.loph.tk/p/binary-tree/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://www.loph.tk/p/binary-tree/</guid><description>&lt;img src="https://www.loph.tk/p/binary-tree/cover.jpg" alt="Featured image of post Binary Tree" />&lt;h2 id="terms">Terms&lt;/h2>
+&lt;ul>
+&lt;li>Node Degree: For a given node, its number of children.&lt;/li>
+&lt;li>Degree of tree: The degree of a tree is the maximum degree of a node in the tree.&lt;/li>
+&lt;/ul>
+&lt;h2 id="properties">Properties&lt;/h2>
+&lt;ul>
+&lt;li>The maximum number of nodes in &lt;em>&lt;strong>i&lt;/strong>&lt;/em> th level is &lt;strong>$2^{i-1}$&lt;/strong>.&lt;/li>
+&lt;li>The maximum number of nodes of tree with &lt;em>&lt;strong>k&lt;/strong>&lt;/em> depth is &lt;strong>$2^k-1$&lt;/strong>.&lt;/li>
+&lt;li>The number of leaves of a binary tree is &lt;em>&lt;strong>$n_0$&lt;/strong>&lt;/em>, the number of nodes with 2 degree is
+&lt;em>&lt;strong>$n_2$&lt;/strong>&lt;/em>, then &lt;em>&lt;strong>$n_0$ = $n_2$&lt;/strong>&lt;/em> &lt;strong>+ 1&lt;/strong>.&lt;/li>
+&lt;li>The depth of a complete binary tree with &lt;em>&lt;strong>n&lt;/strong>&lt;/em> nodes is $\lfloor$ &lt;strong>$log_2{n}$&lt;/strong> $\rfloor$ + &lt;strong>1&lt;/strong>.&lt;/li>
+&lt;li>For a complete binary tree with &lt;em>&lt;strong>n&lt;/strong>&lt;/em> nodes, its depth is $\lfloor$ &lt;strong>$log_2{n}$&lt;/strong> $\rfloor$ + &lt;strong>1&lt;/strong>,
+we name every nodes in order by level from left to right, for every node &lt;em>&lt;strong>i&lt;/strong>&lt;/em>:
+&lt;ul>
+&lt;li>If &lt;em>i&lt;/em> = 1, the node is root of the tree; else its parent node is $\lfloor$ i/2 $\rfloor$.&lt;/li>
+&lt;li>If 2&lt;em>i&lt;/em> &amp;gt; &lt;em>n&lt;/em>, the node is a leaf, with no left child; otherwise, its left child&amp;rsquo;s order is 2i.&lt;/li>
+&lt;li>If 2&lt;em>i&lt;/em> + 1 &amp;gt; &lt;em>n&lt;/em>, the node hasn&amp;rsquo;t right child; otherwise, the order of its right child is 2i + 1.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For a binary tree with &lt;em>&lt;strong>n&lt;/strong>&lt;/em> nodes represented by bi-linked list, every node has two pointer field,
+totally 2n pointer field, non-used pointer field is &lt;em>&lt;strong>n + 1&lt;/strong>&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="traversal">Traversal&lt;/h2>
+&lt;p>N represent current node, L represent its LEFT subtree, R represent its RIGHT subtree.&lt;/p>
+&lt;ul>
+&lt;li>Pre-order(NLR): Visit &lt;strong>current node&lt;/strong>, recursively visit its &lt;strong>left subtree&lt;/strong> and &lt;strong>right subtree&lt;/strong>,
+scan the tree &lt;em>&lt;strong>up to down&lt;/strong>&lt;/em> totally.&lt;/li>
+&lt;li>In-order(LNR): Recursively visit its &lt;strong>left subtree&lt;/strong>, &lt;strong>current node&lt;/strong> and its &lt;strong>right subtree&lt;/strong>,
+scan the tree &lt;em>&lt;strong>left to right&lt;/strong>&lt;/em> totally.&lt;/li>
+&lt;li>Post-order(LRN): Recursively visit its &lt;strong>left subtree&lt;/strong>, its &lt;strong>right subtree&lt;/strong> and the &lt;strong>current node&lt;/strong>,
+scan the tree &lt;em>&lt;strong>down to up&lt;/strong>&lt;/em> totally.&lt;/li>
+&lt;/ul>
+&lt;h2 id="conversion-between-tree-and-binary-tree">Conversion between Tree and Binary Tree&lt;/h2>
+&lt;p>Use the bi-link list, we can uniform the tree and binary tree.&lt;/p>
 &lt;blockquote>
+&lt;p>For any node in a binary tree, its left child represents its first child in a tree, respectively.
+Its right child represents the cousin of this node in the original tree.
+&lt;strong>In other words, the right branch represents its cousin, in same level and the
+right branch represents its depth of the original tree.&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>i.e.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> a a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /|\ -&amp;gt; /
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> b c d &amp;lt;- b
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /|\ / \ / \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> efg h i e c
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> \ \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> f d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> \ /
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> g h
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> i
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
 &lt;p>Photo by &lt;a class="link" href="https://medium.com/@gauriwankhade" target="_blank" rel="noopener"
 >Gauri wankhade&lt;/a> on &lt;a class="link" href="https://medium.com/" target="_blank" rel="noopener"
 >Medium&lt;/a>&lt;/p>
