@@ -35,8 +35,8 @@ scan the tree &lt;em>&lt;strong>down to up&lt;/strong>&lt;/em> totally.&lt;/li>
 &lt;p>Use the bi-link list, we can uniform the tree and binary tree.&lt;/p>
 &lt;blockquote>
 &lt;p>For any node in a binary tree, its left child represents its first child in a tree, respectively.
-Its right child represents the cousin of this node in the original tree.
-&lt;strong>In other words, the right branch represents its cousin, in same level and the
+Its right child represents the sibling of this node in the original tree.
+&lt;strong>In other words, the right branch represents its sibling, in same level and the
 right branch represents its depth of the original tree.&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;p>i.e.&lt;/p>
