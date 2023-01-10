@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arp-Madore 417-391</title><link>https://www.loph.tk/</link><description>Recent content on Arp-Madore 417-391</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Dec 2022 15:33:37 +0800</lastBuildDate><atom:link href="https://www.loph.tk/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown Overview</title><link>https://www.loph.tk/p/markdown-overview/</link><pubDate>Sat, 10 Dec 2022 15:33:37 +0800</pubDate><guid>https://www.loph.tk/p/markdown-overview/</guid><description>&lt;h2 id="headings">Headings&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arp-Madore 417-391</title><link>https://www.loph.tk/</link><description>Recent content on Arp-Madore 417-391</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Jan 2023 11:00:26 +0800</lastBuildDate><atom:link href="https://www.loph.tk/index.xml" rel="self" type="application/rss+xml"/><item><title>Grub Repair</title><link>https://www.loph.tk/p/grub-repair/</link><pubDate>Tue, 10 Jan 2023 11:00:26 +0800</pubDate><guid>https://www.loph.tk/p/grub-repair/</guid><description>&lt;p>A workthough to repair the grub of debian.&lt;/p>
+&lt;h2 id="all-steps">All steps&lt;/h2>
+&lt;ul>
+&lt;li>Boot from the USB stick with Debian images written on, and press &lt;strong>C&lt;/strong> to access grub.&lt;/li>
+&lt;li>Boot debian mannually as below.
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> &lt;span class="nv">prefix&lt;/span>&lt;span class="o">=(&lt;/span>lvm/DAW--vg-root&lt;span class="o">)&lt;/span>/boot/grub
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> &lt;span class="nv">root&lt;/span>&lt;span class="o">=(&lt;/span>lvm/DAW--vg-root&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">insmod normal
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">normal
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Press C to access grub shell again.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">insmod linux
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">linux /boot/vmlinuz-5.10.0-20-amd64 &lt;span class="nv">root&lt;/span>&lt;span class="o">=&lt;/span>/dev/mapper/DAW--vg-root
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">initrd /boot/initrd.img-5.10.0-20-amd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">boot
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>Repair grub.
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo grub-install /dev/sda
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo grub-install --recheck /dev/sda
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo grub-mkconfig &amp;gt; /boot/grub/grub.cfg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo reboot
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>Repair BIOS.
+Press &lt;strong>F12&lt;/strong> repeatedly to access the BIOS, and delete the old boot record of debian, add new debian boot record.&lt;/li>
+&lt;/ul>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://0xcaffee.blog/posts/grub-booting-with-lvm/" target="_blank" rel="noopener"
+>Manual booting linux with LVM (and fixing grub)&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/chroot-logical-volume-manager" target="_blank" rel="noopener"
+>Troubleshooting a Linux VM when there is no access to the Azure serial console and the disk layout is using LVM (Logical Volume Manager)&lt;/a>.&lt;/li>
+&lt;/ol></description></item><item><title>Markdown Overview</title><link>https://www.loph.tk/p/markdown-overview/</link><pubDate>Sat, 10 Dec 2022 15:33:37 +0800</pubDate><guid>https://www.loph.tk/p/markdown-overview/</guid><description>&lt;h2 id="headings">Headings&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
